@@ -165,12 +165,12 @@ function affect!(integrator)
 end
 jump = ConstantRateJump(rate,affect!)
 
-rate(t,u) = 0.01u[2]
-function affect!(integrator)
+rate2(t,u) = 0.01u[2]
+function affect2!(integrator)
   integrator.u[2] -= 1
   integrator.u[3] += 1
 end
-jump2 = ConstantRateJump(rate,affect!)
+jump2 = ConstantRateJump(rate2,affect2!)
 ```
 
 We can then use `JumpProblem` to augment a problem with jumps. To add the jumps
