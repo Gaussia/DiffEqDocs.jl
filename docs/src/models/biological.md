@@ -133,8 +133,8 @@ end
 this corresponds to the differential equation:
 
 ```math
-d[X]/dt = -1.0\*[X\]^2/2!
-d[X2]/dt = 1.0\*[X\]^2/2!
+\frac{d[X]}{dt} = -1.0[X]^2/2!
+\frac{d[X2]}{dt} = 1.0[X]^2/2!
 ```
 
 Other numbers than 2 can be used and parenthesises can be used to use the same stoichiometry for several reactants:
@@ -154,7 +154,7 @@ end
 and will have `Y` degraded at rate 
 
 ```math
-d[Y]/dt = -[X]\*[Y]
+\frac{d[Y]}{dt} = -[X]\cdot [Y]
 ```
 
 Note that this is actually equivalent to the reaction
